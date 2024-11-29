@@ -5,7 +5,7 @@ export default function Home() {
         <div className="min-h-screen flex flex-col items-center">
         {/* Hero Section */}
         <header className="bg-primary text-white w-full py-12 text-center">
-          <h1 className="text-5xl font-bold mb-4">Matthew Jiang's Website</h1>
+          <h1 className="text-5xl font-bold mb-4">Matthew Jiang&apos;s Website</h1>
           <p className="text-xl">Design. Innovate. Engineer.</p>
         </header>
   
