@@ -25,7 +25,7 @@ const Logo = () => {
           src="/assets/icon.png"
           alt="Logo"
           width="40"
-        height="40"
+          height="40"
           className="relative"
         />
       </Link>
