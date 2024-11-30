@@ -47,7 +47,7 @@ export default function Home() {
             </div>
             <h2 className="text-xl text-gray-600 font-bold mb-2">RoboLAND</h2>
             <p className="text-gray-600 text-center">
-            Robot Locomotion And Navigation Dynamics
+            Robot Locomotion And Navigation Dynamics:
             Generating desired movements from undesired environments.
             </p>
           </div>
@@ -73,10 +73,6 @@ export default function Home() {
           </a>
         </main>
         </div>
-        {/* Footer Section */}
-        <footer className="text-white w-full py-4 text-center">
-          <p>&copy; {new Date().getFullYear()} Matthew Jiang. All rights reserved.</p>
-        </footer>
       </div>
     )
   }
