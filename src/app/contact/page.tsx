@@ -8,7 +8,7 @@ const Contact = () => {
       Contact Me
     </h1>
     <p className="text-center text-base text-background mb-8">
-      I'd love to hear from you! You can reach out to me through the following methods:
+      I&apos;d love to hear from you! You can reach out to me through the following methods:
     </p>
     <div className="space-y-4 text-center">
       <p className="text-lg text-gray-700">
