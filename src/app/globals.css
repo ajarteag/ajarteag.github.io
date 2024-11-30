@@ -6,12 +6,14 @@
 :root {
   --background: #ffffff;
   --foreground: #2e363d;
+  --hovercolor1: #349eff;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #2e363d;
     --foreground: #ededed;
+    --hovercolor1: #349eff;
   }
 }
 
@@ -38,10 +40,11 @@ body {
 }
 
 .key {
-  font-size: 7.5vw;
-  display: inline-block;
-  letter-spacing: -0.6vw;
-  transition: transform 0.2s;
+    font-size: 7.5vw;
+    display: inline-block;
+    letter-spacing: -0.6vw;
+    transition: transform 0.2s;
+    user-select: none;
 }
 
 
@@ -207,7 +210,7 @@ a {
   color: white;
   background-color: black;
   border: 2px solid rgba(255, 255, 255, 0.3);
-  border-radius: 10px;
+  border-radius: 8px;
   transition: 0.1s all ease-in;
 }
 

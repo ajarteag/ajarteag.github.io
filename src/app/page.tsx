@@ -22,7 +22,7 @@ export default function Home() {
                 <span className="key">G</span>
             </div>
 </h1>
-          <p className="text-xl">Design. Innovate. Engineer.</p>
+          <p className="text-xl select-none">Design. Innovate. Engineer.</p>
         </header>
   
         <div className="flex flex-wrap gap-6">

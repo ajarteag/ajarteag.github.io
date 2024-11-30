@@ -11,6 +11,13 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        hovercolor1: "var(--hovercolor1)",
+      },
+      boxShadowColor: {
+        hovercolor1: "var(--hovercolor1)",
+      },
+      boxShadow: {
+        hover1: "0px 2px 0 var(--hovercolor1)",
       },
     },
   },
