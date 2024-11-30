@@ -167,6 +167,25 @@ body {
 .key:nth-child(8) {
   animation: pressDown8 3.2s infinite;
 }
+.key:nth-child(9) {
+    animation: pressDown1 2.8s infinite;
+}
+
+.key:nth-child(10) {
+    animation: pressDown2 3.3s infinite;
+}
+
+.key:nth-child(11) {
+    animation: pressDown3 4.1s infinite;
+}
+
+.key:nth-child(12) {
+    animation: pressDown4 2.7s infinite;
+}
+
+.key:nth-child(13) {
+    animation: pressDown5 2.9s infinite;
+}
 
 
 

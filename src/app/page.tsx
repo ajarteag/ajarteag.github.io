@@ -5,21 +5,22 @@ export default function Home() {
         <div className="min-h-screen flex flex-col items-center">
         {/* Hero Section */}
         <header className="bg-primary text-white w-full py-12 text-center">
-          <h1 className="text-5xl font-bold mb-4"><div className="keyboard">
-            <span className="key">M</span>
-            <span className="key">A</span>
-            <span className="key">T</span>
-            <span className="key">T</span>
-            <span className="key">H</span>
-            <span className="key">E</span>
-            <span className="key">W</span>
-            <span className="key">&nbsp;</span>
-            <span className="key">J</span>
-            <span className="key">I</span>
-            <span className="key">A</span>
-            <span className="key">N</span>
-            <span className="key">G</span>
-        </div>
+          <h1 className="text-5xl font-bold mb-4">
+            <div className="keyboard">
+                <span className="key">M</span>
+                <span className="key">A</span>
+                <span className="key">T</span>
+                <span className="key">T</span>
+                <span className="key">H</span>
+                <span className="key">E</span>
+                <span className="key">W</span>
+                <span className="key">&nbsp;</span>
+                <span className="key">J</span>
+                <span className="key">I</span>
+                <span className="key">A</span>
+                <span className="key">N</span>
+                <span className="key">G</span>
+            </div>
 </h1>
           <p className="text-xl">Design. Innovate. Engineer.</p>
         </header>

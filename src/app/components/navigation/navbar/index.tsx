@@ -5,7 +5,7 @@ import Logo from "./Logo";
 const Navbar = () => {
   return (
     <>
-      <div className="w-full h-20 sticky top-0 bg">
+      <div className="w-full h-20 sticky top-0 bg-background z-50">
         <div className="container mx-auto px-4 h-full">
           <div className="font-medium flex justify-between items-center h-full">
             <div className="color-var(--foreground) inline-flex align-middle text-4xl font-bold">
