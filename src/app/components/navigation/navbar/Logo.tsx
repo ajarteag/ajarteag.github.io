@@ -20,16 +20,27 @@ const Logo = () => {
 
   return (
     <>
-      <Link href="/" style={{ display: "block" }}>
-        <Image
-          src="/assets/icon.png"
-          alt="Logo"
-          width="40"
-          height="40"
-          className="relative"
-        />
-      </Link>
-    </>
+  <Link
+    href="/"
+    style={{
+      display: "flex",
+      alignItems: "center",
+      padding: "10px 15px",
+    }}
+  >
+    <Image
+      src="/assets/icon.png"
+      alt="Logo"
+      width="40"
+      height="40"
+      className="relative"
+    />
+    <span>&nbsp;Matthew Jiang</span>
+  </Link>
+
+</>
+
+
   );
 };
 
