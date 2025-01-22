@@ -29,7 +29,7 @@ export default function Home() {
         {/* Content Section */}
         <main className="max-w-7xl mx-auto p-8 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Placeholder for Assets */}
-          <a href="https://github.com/usc-robosub">
+          <a href="https://usc-robosub.github.io/">
           <div className="flex flex-col items-center bg-white rounded-lg shadow-lg p-6 h-full">
             <div className="h-40 w-40 bg-gray-200 rounded-full mb-4 flex items-center justify-center">
               
