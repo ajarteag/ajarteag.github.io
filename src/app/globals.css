@@ -4,18 +4,12 @@
 
 
 :root {
-  --background: #ffffff;
-  --foreground: #2e363d;
-  --hovercolor1: #349eff;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
     --background: #2e363d;
     --foreground: #ededed;
     --hovercolor1: #349eff;
-  }
 }
+
+
 
 body {
   color: var(--foreground);
