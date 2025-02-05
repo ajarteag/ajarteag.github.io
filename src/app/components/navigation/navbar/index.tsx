@@ -23,6 +23,11 @@ const Navbar = () => {
                 </Link>
               </li>
               <li>
+                <Link href="https://webui.matthewyjiang.com" className="px-3 py-1.5 text-blue-500 hover:text-blue-300 font-extrabold ">
+                  <span>AI Chat</span>
+                </Link>
+              </li>
+              <li>
                 <Link href="https://www.linkedin.com/in/matthewyjiang/" className="px-3 py-1.5">
                   <span>LinkedIn</span>
                 </Link>
