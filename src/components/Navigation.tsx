@@ -7,9 +7,10 @@ const Navigation = () => {
     <nav className="bg-gray-900/50 backdrop-blur-lg fixed w-full z-10">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <a href="/" className="text-xl font-bold hover:text-blue-400 transition-colors">
-            Matthew Jiang
-          </a>
+        <a href="/" className="text-xl font-bold flex items-center gap-2 hover:text-blue-400 transition-colors h-full">
+        <img src='/favicon.svg' className="h-6 w-auto object-contain pointer-events-none" alt="Logo"/>
+        Matthew Jiang
+        </a>
           
           <div className="flex items-center gap-6">
             <a href="/" className="flex items-center gap-2 hover:text-blue-400 transition-colors">
