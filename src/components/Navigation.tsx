@@ -10,23 +10,23 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
         <Link to="/" className="text-xl font-bold flex items-center gap-2 hover:text-blue-400 transition-colors h-full">
         <img src='/favicon.svg' className="h-6 w-auto object-contain pointer-events-none" alt="Logo"/>
-        Matthew Jiang
+        matthew jiang
         </Link>
           
           <div className="flex items-center gap-6">
-          <Link to="/" className="flex items-center gap-2 hover:text-blue-400 transition-colors">
+          <Link to="/home" className="flex items-center gap-2 hover:text-blue-400 transition-colors">
               <Home size={20} />
-              <span className="hidden sm:inline">Home</span>
+              <span className="hidden sm:inline">home</span>
             </Link>
             <Link to="/projects" 
               className="flex items-center gap-2 hover:text-blue-400 transition-colors"
             >
               <Folder size={20} />
-              <span className="hidden sm:inline">Projects</span>
+              <span className="hidden sm:inline">projects</span>
             </Link>
             <Link to="/cv.pdf" className="flex items-center gap-2 hover:text-blue-400 transition-colors">
               <FileText size={20} />
-              <span className="hidden sm:inline">CV</span>
+              <span className="hidden sm:inline">cv</span>
             </Link>
             
             
