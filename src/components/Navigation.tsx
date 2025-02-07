@@ -15,7 +15,7 @@ const Navigation = () => {
               <Home size={20} />
               <span className="hidden sm:inline">Home</span>
             </a>
-            <a href="/cv" className="flex items-center gap-2 hover:text-blue-400 transition-colors">
+            <a href="/cv.pdf" className="flex items-center gap-2 hover:text-blue-400 transition-colors">
               <FileText size={20} />
               <span className="hidden sm:inline">CV</span>
             </a>

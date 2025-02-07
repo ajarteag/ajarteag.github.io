@@ -23,10 +23,10 @@ function App() {
               
             </p> */}
             
-            <div className="flex justify-center gap-4">
+            <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 px-4">
               <a
-                href="/cv"
-                className="flex items-center gap-2 px-6 py-3 bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors"
+                href="/cv.pdf"
+                className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3 bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors text-base sm:text-sm md:text-base"
               >
                 <FileText size={20} />
                 View CV
@@ -35,7 +35,7 @@ function App() {
                 href="https://github.com/matthewyjiang"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 px-6 py-3 bg-gray-700 rounded-lg hover:bg-gray-600 transition-colors"
+                className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3 bg-gray-700 rounded-lg hover:bg-gray-600 transition-colors text-base sm:text-sm md:text-base"
               >
                 <Github size={20} />
                 GitHub
@@ -44,7 +44,7 @@ function App() {
                 href="https://linkedin.com/in/matthewyjiang"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 px-6 py-3 bg-[#0077b5] rounded-lg hover:bg-[#006399] transition-colors"
+                className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3 bg-[#0077b5] rounded-lg hover:bg-[#006399] transition-colors text-base sm:text-sm md:text-base"
               >
                 <Linkedin size={20} />
                 LinkedIn
