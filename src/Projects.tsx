@@ -38,7 +38,7 @@ const projects = [
     stars: 0
   },
   {
-    title: "EE454 - Verilog CNN",
+    title: "Verilog CNN",
     description: "A Convolutional Neural Network Implemented in System Verilog.",
     image: "https://saturncloud.io/images/blog/a-comprehensive-guide-to-convolutional-neural-networks-the-eli5-way.webp",
     tags: ["Verilog", "System Verilog", "Modelsim", "Machine Learning", "CNN", "Neural Networks", "HDL"],
@@ -49,7 +49,7 @@ const projects = [
     stars: 0
   },
   {
-    title: "CSCI444 - RAG",
+    title: "RAG",
     description: "Retrieval Augmented Generation, evaluated by Large Langauage Models.",
     image: "/rag-image.png",
     tags: ["RAG", "LLM", "Python", "REST API", "Natural Language Processing", "Word Embeddings"],
@@ -60,7 +60,7 @@ const projects = [
     stars: 0
   },
   {
-    title: "CSCI467 - Classifying Political Sentiment on Tweet Samples",
+    title: "Classifying Political Sentiment on Tweet Samples",
     description: "Developed a neural network model based on Recurrent Neural Networks (RNN) with Long Short-Term Memory (LSTM) units using PyTorch to identify biases in tweet content.",
     image: "https://www.mdpi.com/information/information-15-00517/article_deploy/html/images/information-15-00517-g001.png",
     tags: ["RNN", "LSTM", "Machine Learning", "Python", "Natural Language Processing", "Word Embeddings"],
@@ -71,7 +71,7 @@ const projects = [
     stars: 0
   },
   {
-    title: "EE250 - Security Camera",
+    title: "Security Camera",
     description: "A home protection system that utilizes the YOLO detection system to determine if a human is in the camera frame.",
     image: "/ee250-demo.png",
     tags: ["YOLO", "OpenCV", "Computer Vision", "IOT", "Raspberry Pi", "Python", "MQTT", "REST API"],
