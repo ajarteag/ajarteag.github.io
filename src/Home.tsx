@@ -80,7 +80,7 @@ function Home() {
           <section className="mb-16">
             <h2 className="text-3xl font-bold mb-6">About Me</h2>
             <p className="text-gray-300 leading-relaxed mb-4">
-            An ambitious engineering student with experience in software engineering, embedded software, and robotics.
+            An ambitious engineering student with experience in software engineering, embedded software, and robotics. Currently conducting research on 2D navigation algorithms for unknown mappable terrains at the USC Robot Locomotion and Dynamics Laboratory.
             </p>
             <p className="text-gray-300 leading-relaxed">
             My Distro: Debian Bookworm
