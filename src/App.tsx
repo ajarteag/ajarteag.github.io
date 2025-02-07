@@ -40,13 +40,13 @@ function App() {
               alt="Matthew Jiang"
               className="w-48 h-48 rounded-full mx-auto mb-8 object-cover border-4 border-blue-500"
             />
-            <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text leading-relaxed">
+            <h1 className="text-5xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text leading-relaxed">
               Matthew Jiang
             </h1>
             </div>
-            {/* <p className="text-xl text-gray-300 mb-8">
-              
-            </p> */}
+            <p className="text-xl text-gray-300 mb-8">
+              Undergraduate Student @ USC
+            </p>
             
             <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 px-4">
               <a
