@@ -34,6 +34,7 @@ function App() {
       <main className="container mx-auto px-4 py-16">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
+            <div className="select-none pointer-events-none">
             <img
               src="/kermit.png"
               alt="Matthew Jiang"
@@ -42,6 +43,7 @@ function App() {
             <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text leading-relaxed">
               Matthew Jiang
             </h1>
+            </div>
             {/* <p className="text-xl text-gray-300 mb-8">
               
             </p> */}
