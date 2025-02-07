@@ -14,7 +14,7 @@ const Footer = () => {
             className="flex items-center gap-2 text-gray-400 hover:text-blue-400 transition-colors"
           >
             <Mail size={20} />
-            jiangmy@usc.edu
+            jiangmy [at] usc [dot] edu
           </a>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import React from 'react';
-import { Home, FileText, Github, Linkedin, BotMessageSquare} from 'lucide-react';
+import { Home, FileText, Github, Linkedin, Folder} from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 
 const Navigation = () => {
@@ -7,47 +8,27 @@ const Navigation = () => {
     <nav className="bg-gray-900/50 backdrop-blur-lg fixed w-full z-10">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-        <a href="/" className="text-xl font-bold flex items-center gap-2 hover:text-blue-400 transition-colors h-full">
+        <Link to="/" className="text-xl font-bold flex items-center gap-2 hover:text-blue-400 transition-colors h-full">
         <img src='/favicon.svg' className="h-6 w-auto object-contain pointer-events-none" alt="Logo"/>
         Matthew Jiang
-        </a>
+        </Link>
           
           <div className="flex items-center gap-6">
-            <a href="/" className="flex items-center gap-2 hover:text-blue-400 transition-colors">
+          <Link to="/" className="flex items-center gap-2 hover:text-blue-400 transition-colors">
               <Home size={20} />
               <span className="hidden sm:inline">Home</span>
-            </a>
-            <a href="/cv.pdf" className="flex items-center gap-2 hover:text-blue-400 transition-colors">
+            </Link>
+            <Link to="/projects" 
+              className="flex items-center gap-2 hover:text-blue-400 transition-colors"
+            >
+              <Folder size={20} />
+              <span className="hidden sm:inline">Projects</span>
+            </Link>
+            <Link to="/cv.pdf" className="flex items-center gap-2 hover:text-blue-400 transition-colors">
               <FileText size={20} />
               <span className="hidden sm:inline">CV</span>
-            </a>
-            <a 
-              href="https://webui.matthewyjiang.com" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 hover:text-blue-400 transition-colors"
-            >
-              <BotMessageSquare size={20} />
-              <span className="hidden sm:inline">AI Chat</span>
-            </a>
-            <a 
-              href="https://github.com/matthewyjiang" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 hover:text-blue-400 transition-colors"
-            >
-              <Github size={20} />
-              <span className="hidden sm:inline">GitHub</span>
-            </a>
-            <a 
-              href="https://linkedin.com/in/matthewyjiang" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 hover:text-blue-400 transition-colors"
-            >
-              <Linkedin size={20} />
-              <span className="hidden sm:inline">LinkedIn</span>
-            </a>
+            </Link>
+            
             
           </div>
         </div>
