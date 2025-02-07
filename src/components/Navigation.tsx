@@ -24,10 +24,10 @@ const Navigation = () => {
               <Folder size={20} />
               <span className="hidden sm:inline">projects</span>
             </Link>
-            <Link to="/cv.pdf" className="flex items-center gap-2 hover:text-blue-400 transition-colors">
+            <a href="/cv.pdf" className="flex items-center gap-2 hover:text-blue-400 transition-colors">
               <FileText size={20} />
               <span className="hidden sm:inline">cv</span>
-            </Link>
+            </a> {/* <a> because we want to force page to load fully, dont care about speed*/}
             
             
           </div>

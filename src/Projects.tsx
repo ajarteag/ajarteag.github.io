@@ -95,7 +95,7 @@ const Projects = () => {
               Projects
             </h1>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-              A collection of my work.
+              A collection.
             </p>
           </header>
 
