@@ -91,7 +91,7 @@ const Projects = () => {
       <main className="container mx-auto px-4 py-24">
         <div className="max-w-6xl mx-auto">
           <header className="text-center mb-16">
-            <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text">
+            <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text leading-relaxed">
               Projects
             </h1>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto">
