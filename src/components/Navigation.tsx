@@ -6,7 +6,9 @@ const Navigation = () => {
     <nav className="bg-gray-900/50 backdrop-blur-sm fixed w-full z-10">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <a href="/" className="text-xl font-bold">MJ</a>
+          <a href="/" className="text-xl font-bold">
+            Matthew Jiang
+          </a>
           
           <div className="flex items-center gap-6">
             <a href="/" className="flex items-center gap-2 hover:text-blue-400 transition-colors">
@@ -18,7 +20,7 @@ const Navigation = () => {
               <span className="hidden sm:inline">CV</span>
             </a>
             <a 
-              href="https://github.com/matthewjiang" 
+              href="https://github.com/matthewyjiang" 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center gap-2 hover:text-blue-400 transition-colors"
@@ -27,7 +29,7 @@ const Navigation = () => {
               <span className="hidden sm:inline">GitHub</span>
             </a>
             <a 
-              href="https://linkedin.com/in/matthewjiang" 
+              href="https://linkedin.com/in/matthewyjiang" 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center gap-2 hover:text-blue-400 transition-colors"

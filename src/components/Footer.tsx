@@ -10,11 +10,11 @@ const Footer = () => {
             © {new Date().getFullYear()} Matthew Jiang. All rights reserved.
           </p>
           <a 
-            href="mailto:contact@matthewjiang.com"
+            href="mailto:jiangmy@usc.edu"
             className="flex items-center gap-2 text-gray-400 hover:text-blue-400 transition-colors"
           >
             <Mail size={20} />
-            contact@matthewjiang.com
+            jiangmy@usc.edu
           </a>
         </div>
       </div>
