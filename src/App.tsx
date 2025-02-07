@@ -1,9 +1,32 @@
 import React from 'react';
-import { Github, Linkedin, FileText, Home, ExternalLink } from 'lucide-react';
+import { Github, Linkedin, FileText, Home, ExternalLink, ChevronDown } from 'lucide-react';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
+import ScrollIndicator from "./components/ScrollIndicator";
 
 function App() {
+
+    const featuredLinks = [
+        {
+          title: "My Tech Blog",
+          description: "Read my latest thoughts on technology and development",
+          image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&q=80&w=300&h=200",
+          url: "https://blog.matthewjiang.com",
+        },
+        {
+          title: "Portfolio",
+          description: "Check out my latest projects and work",
+          image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=300&h=200",
+          url: "https://portfolio.matthewjiang.com",
+        },
+        {
+          title: "Photography",
+          description: "View my photography collection",
+          image: "https://images.unsplash.com/photo-1452587925148-ce544e77e70d?auto=format&fit=crop&q=80&w=300&h=200",
+          url: "https://photos.matthewjiang.com",
+        },
+      ];
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 text-white">
       <Navigation />
@@ -52,10 +75,14 @@ function App() {
             </div>
           </div>
 
+
           <section className="mb-16">
             <h2 className="text-3xl font-bold mb-6">About Me</h2>
             <p className="text-gray-300 leading-relaxed mb-4">
-              Hi, I'm Matt! I'm passionate about robotics, machine learning, and artificial intelligence.
+            An ambitious engineering student with experience in software engineering, embedded software, and robotics.
+            </p>
+            <p className="text-gray-300 leading-relaxed">
+            My Distro: Debian Bookworm
             </p>
           </section>
 
@@ -90,6 +117,42 @@ function App() {
               </div>
             </div>
           </section>
+
+          {/* <section className="mb-16">
+            <h2 className="text-3xl font-bold mt-8 mb-8">Featured Links</h2>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {featuredLinks.map((link, index) => (
+                <a
+                  key={index}
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group block bg-gray-800 rounded-xl overflow-hidden transform hover:-translate-y-1 transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/10"
+                >
+                  <div className="relative h-48">
+                    <img
+                      src={link.image}
+                      alt={link.title}
+                      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40 to-transparent opacity-60 group-hover:opacity-40 transition-opacity" />
+                  </div>
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold mb-2 group-hover:text-blue-400 transition-colors">
+                      {link.title}
+                    </h3>
+                    <p className="text-gray-400 text-sm">
+                      {link.description}
+                    </p>
+                    <div className="mt-4 flex items-center text-blue-400 text-sm font-medium">
+                      <span>Learn more</span>
+                      <ExternalLink size={16} className="ml-2" />
+                    </div>
+                  </div>
+                </a>
+              ))}
+            </div>
+          </section> */}
         </div>
       </main>
 
