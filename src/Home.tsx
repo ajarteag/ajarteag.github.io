@@ -13,6 +13,18 @@ function Home() {
           image: "https://miro.medium.com/v2/resize:fit:4800/format:webp/1*GbTb20qGI40kJW880gQwyA.jpeg",
           url: "https://medium.matthewyjiang.com",
         },
+        {
+            title: "USC AUV",
+            description: "Meet the USC AUV Design Team",
+            image: "/auv-website.png",
+            url: "https://usc-auv.com",
+        },
+        {
+            title: "RoboLAND",
+            description: "Meet the Robot Locomotion and Navigation Dynamics Lab",
+            image: "/robot-image.png",
+            url: "https://sites.google.com/usc.edu/roboland",
+        },
       ];
 
   return (
@@ -116,24 +128,24 @@ function Home() {
                   href={link.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group block bg-gray-800 rounded-xl overflow-hidden transform transition-all duration-300 hover:shadow-blue-500/10"
+                  className="group block bg-gray-800 rounded-xl overflow-hidden transform transition-all duration-300 hover:shadow-blue-500/10 flex flex-col h-full"
                 >
                   <div className="relative h-48">
                     <img
                       src={link.image}
                       alt={link.title}
-                      className="w-full h-full object-cover"
+                      className="w-full h-40 object-fill"
                     />
                     
                   </div>
-                  <div className="p-6">
+                  <div className="p-6 flex flex-col h-full">
                     <h3 className="text-xl font-bold mb-2 group-hover:text-blue-400 transition-colors">
                       {link.title}
                     </h3>
                     <p className="text-gray-400 text-sm group-hover:text-blue-500 transition-colors">
                       {link.description}
                     </p>
-                    <div className="mt-4 flex items-center group-hover:text-blue-400 text-sm font-medium transition-colors">
+                    <div className="mt-auto flex items-center group-hover:text-blue-400 text-sm font-medium transition-colors">
                       <span>Learn more</span>
                       <ExternalLink size={16} className="ml-2" />
                     </div>
