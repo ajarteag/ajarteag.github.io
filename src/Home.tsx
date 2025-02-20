@@ -90,7 +90,7 @@ function Home() {
             An ambitious engineering student with experience in software engineering, embedded software, and robotics. Currently conducting research on 2D navigation algorithms for unknown mappable terrains at the USC Robot Locomotion and Dynamics Laboratory.
             </p>
             <p className="text-gray-300 leading-relaxed">
-            My Distro: Debian Bookworm
+            My Distro: Arch BTW
             </p>
           </section>
 
