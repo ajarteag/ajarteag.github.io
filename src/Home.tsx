@@ -99,7 +99,7 @@ function Home() {
               <h3 className="text-2xl font-bold mb-4">Skills</h3>
               <div className="flex flex-wrap gap-2">
                 {['Docker', 'ROS', 'Linux', 'C', 'C++', 'Python', 'Verilog', 'MIPS', 'QML', 'MQTT', 'SQL', 'git'].map((skill) => (
-                  <span key={skill} className="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-sm">
+                  <span key={skill} className="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-sm select-none transition-colors hover:bg-blue-600/30 hover:text-blue-300">
                     {skill}
                   </span>
                 ))}
