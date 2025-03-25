@@ -1,6 +1,6 @@
 import React from 'react';
 import { Github, Linkedin, FileText, ExternalLink, BotMessageSquare } from 'lucide-react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Home';
 import Projects from './Projects';
 
