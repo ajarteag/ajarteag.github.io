@@ -1,5 +1,5 @@
 {
     "name": "mywebsite",
-    "main": "src/index.tsx",
+    "main": "src/main.tsx",
     "compatibility_date": "2025-04-07",
 }
