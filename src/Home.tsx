@@ -48,6 +48,9 @@ function Home() {
             <p className="text-xl text-gray-300 mb-8">
               B.S. Computer Engineering and Computer Science @ USC
             </p>
+            <p className="text-xl text-gray-300 mb-8">
+              M.S. Robotics @ Georgia Tech
+            </p>
             
             <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 px-4">
               <Tooltip content="An OpenWebUI powered interface for my locally hosted language models (approved authentication required)." placement="left" style="dark" arrow={false} className="w-64 text-md">
