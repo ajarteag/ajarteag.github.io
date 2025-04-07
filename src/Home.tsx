@@ -46,7 +46,7 @@ function Home() {
             </h1>
             </div>
             <p className="text-xl text-gray-300 mb-8">
-              Undergraduate Student @ USC
+              B.S. Computer Engineering and Computer Science @ USC
             </p>
             
             <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 px-4">
