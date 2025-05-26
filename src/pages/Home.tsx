@@ -1,9 +1,9 @@
 import React from 'react';
 import { Github, Linkedin, FileText, ExternalLink, BotMessageSquare } from 'lucide-react';
 import { Tooltip } from 'flowbite-react';
-import Navigation from './components/Navigation';
-import Footer from './components/Footer';
-import ScrollIndicator from "./components/ScrollIndicator";
+import Navigation from '../components/Navigation';
+import Footer from '../components/Footer';
+import ScrollIndicator from "../components/ScrollIndicator";
 
 function Home() {
 

@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
         fontFamily: {
-        mono: ['Roboto Mono', 'monospace'],
+        mono: ['IBM Plex Mono', 'monospace'],
       },
     },
   },
