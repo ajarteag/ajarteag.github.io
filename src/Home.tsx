@@ -26,6 +26,12 @@ function Home() {
             image: "/robot-image.png",
             url: "https://sites.google.com/usc.edu/roboland",
         },
+        {
+            title: "Undergraduate Thesis",
+            description: "Read my undergraduate thesis on Safe Reactive Navigation for Granular Terrain Exploration",
+            image: "https://plus.unsplash.com/premium_photo-1683749808307-e5597ac69f1e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA",
+            url: "/undergraduate_thesis.pdf",
+        }
       ];
 
   return (
@@ -46,10 +52,7 @@ function Home() {
             </h1>
             </div>
             <p className="text-xl text-gray-300 mb-8">
-              B.S. Computer Engineering and Computer Science @ USC
-            </p>
-            <p className="text-xl text-gray-300 mb-8">
-              M.S. Robotics @ Georgia Tech 
+              Robotics @ Georgia Tech 
             </p>
             
             <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 px-4">
@@ -90,10 +93,10 @@ function Home() {
           <section className="mb-16">
             <h2 className="text-3xl font-bold mb-6">About Me</h2>
             <p className="text-gray-300 leading-relaxed mb-4">
-            An ambitious engineering student with experience in software engineering, embedded software, and robotics. Currently conducting research on 2D navigation algorithms for unknown mappable terrains at the USC Robot Locomotion and Dynamics Laboratory.
+            An ambitious engineering student with experience in software engineering, embedded software, and robotics. Holds a B.S in Computer Engineering and Computer Science from the University of Southern California.
             </p>
-            <p className="text-gray-300 leading-relaxed">
-            My Distro: Arch BTW
+            <p className="text-gray-300 leading-relaxed mb-4">
+            Currently an intern at NASA Jet Propulsion Laboratory working on Robot Operations for the Mars 2020 Mission.
             </p>
           </section>
 
@@ -101,7 +104,7 @@ function Home() {
             <div className="bg-gray-800 p-6 rounded-lg">
               <h3 className="text-2xl font-bold mb-4">Skills</h3>
               <div className="flex flex-wrap gap-2">
-                {['Docker', 'ROS', 'Linux', 'C', 'C++', 'Python', 'Verilog', 'MIPS', 'QML', 'MQTT', 'SQL', 'git'].map((skill) => (
+                {['Linux', 'Docker', 'ROS', 'C', 'C++', 'Python', 'Verilog', 'git'].map((skill) => (
                   <span key={skill} className="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-sm select-none transition-colors hover:bg-blue-600/30 hover:text-blue-300">
                     {skill}
                   </span>
@@ -116,7 +119,7 @@ function Home() {
                     <span className="font-medium group-hover:text-blue-400 transition-colors">Barracuda</span>
                     <ExternalLink size={16} className="text-gray-400" />
                   </div>
-                  <p className="text-sm text-gray-400">USC AUV: A fully autonomous underwater vehicle for RoboSub</p>
+                  <p className="text-sm text-gray-400">USC AUV: A fully autonomous underwater vehicle for the RoboSub competition</p>
                 </a>
                 <a href="https://github.com/matthewyjiang/project-wumbo" className="block group">
                   <div className="flex items-center justify-between">
