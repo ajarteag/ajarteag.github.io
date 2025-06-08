@@ -41,13 +41,13 @@ const Navigation = () => {
               <FileText size={20} />
               <span className="hidden sm:inline">publications</span>
             </Link>
-            <a
+            {/* <a
               href="/cv.pdf"
               className="flex items-center gap-2 hover:text-blue-400 transition-colors h-full"
             >
               <FileText size={20} />
               <span className="hidden sm:inline">cv</span>
-            </a>{" "}
+            </a> */}
             {/* <a> because we want to force page to load fully, dont care about speed*/}
           </div>
         </div>
