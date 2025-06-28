@@ -7,6 +7,7 @@ const publications = [
     title: "Safe Reactive Navigation for Granular Terrain Exploration",
     year: "2025",
     authors: ["Matthew Y. Jiang"],
+    venue: "Undergraduate Thesis, University of Southern California",
     link: "/undergraduate_thesis.pdf",
     published: true,
   },
@@ -14,6 +15,7 @@ const publications = [
     title: "RSS Multi Objective Optimization (MOO) Workshop - Safe Active Navigation and Exploration for Planetary Environments Using Proprioceptive Measurements",
     year: "2025",
     authors: ["Matthew Y. Jiang", "Feifei Qian", "Shipeng Liu"],
+    venue: "RSS Workshop on Multi-Objective Optimization",
     link: "/rss_workshop_safe_exploration.pdf",
     published: true,
   },
@@ -38,9 +40,12 @@ const Publications = () => {
                 className="bg-gray-800 rounded-xl overflow-hidden shadow-lg flex flex-col"
               >
                 <div className="p-8 pb-4 flex-grow flex flex-col text-left">
-                  <h2 className="text-2xl font-bold mb-4 text-white">
+                  <h2 className="text-2xl font-bold mb-2 text-white">
                     {publication.title}
                   </h2>
+                  <p className="text-gray-400 italic mb-4">
+                    {publication.venue}
+                  </p>
                   <div className="text-gray-300 space-y-1">
                     <p>
                       <span className="font-semibold">
