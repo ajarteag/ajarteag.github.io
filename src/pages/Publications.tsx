@@ -11,11 +11,11 @@ const publications = [
     published: true,
   },
   {
-    title: "Upcoming Paper for ICRA 2026",
-    year: "2026",
-    authors: ["Matthew Y. Jiang", "Shipeng Liu", "Feifei Qian"],
-    link: "",
-    published: false,
+    title: "RSS Multi Objective Optimization (MOO) Workshop - Safe Active Navigation and Exploration for Planetary Environments Using Proprioceptive Measurements",
+    year: "2025",
+    authors: ["Matthew Y. Jiang", "Feifei Qian", "Shipeng Liu"],
+    link: "/rss_workshop_safe_exploration.pdf",
+    published: true,
   },
 ];
 
