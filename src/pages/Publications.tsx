@@ -12,7 +12,7 @@ const publications = [
     published: true,
   },
   {
-    title: "RSS Multi Objective Optimization (MOO) Workshop - Safe Active Navigation and Exploration for Planetary Environments Using Proprioceptive Measurements",
+    title: "Safe Active Navigation and Exploration for Planetary Environments Using Proprioceptive Measurements",
     year: "2025",
     authors: ["Matthew Y. Jiang", "Feifei Qian", "Shipeng Liu"],
     venue: "RSS Workshop on Multi-Objective Optimization",
