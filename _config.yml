@@ -13,11 +13,13 @@ linkedin_username: ajarteag
 
 # Build settings
 markdown: kramdown
-theme: minima
+# theme: minima
+remote_theme: mmistakes/minimal-mistakes
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-include-cache # Add this if using Minimal Mistakes or other advanced themes
 
 # Collections
 collections:
