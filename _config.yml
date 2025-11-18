@@ -1,0 +1,52 @@
+# Site settings
+title: Alejandro Arteaga
+email: your-email@example.com
+description: >-
+  Personal portfolio showcasing robotics, software engineering, and machine learning projects.
+  Passionate about building intelligent systems and innovative solutions.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://ajarteag.github.io" # the base hostname & protocol for your site
+
+# Social links
+github_username: ajarteag
+linkedin_username: your-linkedin-username
+twitter_username: your-twitter-username
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - .gitignore
+  - README.md

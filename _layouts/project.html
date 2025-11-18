@@ -1,0 +1,186 @@
+---
+layout: default
+---
+
+<article class="project">
+  <header class="project-header">
+    <h1 class="project-title">{{ page.title }}</h1>
+    <p class="project-meta">
+      <span class="badge badge-{{ page.category }}">{{ page.category | capitalize }}</span>
+      <span class="badge badge-type">{{ page.project_type | capitalize }} Project</span>
+    </p>
+  </header>
+
+  <div class="project-content">
+    {% if page.image %}
+      <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" class="project-image">
+    {% endif %}
+
+    <div class="project-info">
+      {% if page.description %}
+        <div class="project-description">
+          <h2>Overview</h2>
+          <p>{{ page.description }}</p>
+        </div>
+      {% endif %}
+
+      {% if page.technologies %}
+        <div class="project-technologies">
+          <h3>Technologies Used</h3>
+          <ul class="tech-list">
+            {% for tech in page.technologies %}
+              <li>{{ tech }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endif %}
+
+      {% if page.github_url or page.demo_url %}
+        <div class="project-links">
+          <h3>Links</h3>
+          <ul>
+            {% if page.github_url %}
+              <li><a href="{{ page.github_url }}" target="_blank">View on GitHub</a></li>
+            {% endif %}
+            {% if page.demo_url %}
+              <li><a href="{{ page.demo_url }}" target="_blank">Live Demo</a></li>
+            {% endif %}
+          </ul>
+        </div>
+      {% endif %}
+    </div>
+
+    <div class="project-details">
+      {{ content }}
+    </div>
+
+    {% if page.team_members %}
+      <div class="team-members">
+        <h3>Team Members</h3>
+        <ul>
+          {% for member in page.team_members %}
+            <li>{{ member }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+  </div>
+
+  <footer class="project-footer">
+    <a href="{{ '/projects/' | relative_url }}" class="back-link">← Back to Projects</a>
+  </footer>
+</article>
+
+<style>
+.project {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.project-header {
+  margin-bottom: 30px;
+}
+
+.project-title {
+  margin-bottom: 15px;
+}
+
+.project-meta {
+  margin: 10px 0;
+}
+
+.badge {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.9em;
+  margin-right: 8px;
+}
+
+.badge-robotics {
+  background-color: #ff6b6b;
+  color: white;
+}
+
+.badge-software {
+  background-color: #4ecdc4;
+  color: white;
+}
+
+.badge-ml {
+  background-color: #95e1d3;
+  color: #333;
+}
+
+.badge-type {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.project-image {
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.project-info {
+  margin: 30px 0;
+}
+
+.project-description,
+.project-technologies,
+.project-links,
+.team-members {
+  margin: 25px 0;
+}
+
+.tech-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tech-list li {
+  background-color: #f8f9fa;
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid #dee2e6;
+}
+
+.project-details {
+  line-height: 1.8;
+  margin: 30px 0;
+}
+
+.project-details h2 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.project-details img {
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+.project-footer {
+  margin-top: 50px;
+  padding-top: 20px;
+  border-top: 1px solid #dee2e6;
+}
+
+.back-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+</style>
