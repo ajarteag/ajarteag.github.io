@@ -1,0 +1,102 @@
+---
+layout: page
+title: Blog
+permalink: /blog/
+---
+
+## Latest Posts
+
+{% if site.posts.size > 0 %}
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li class="post-item">
+        <h2>
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </h2>
+        <p class="post-meta">
+          <time datetime="{{ post.date | date_to_xmlschema }}">
+            {{ post.date | date: "%B %-d, %Y" }}
+          </time>
+          {% if post.categories.size > 0 %}
+            <span class="post-categories">
+              {% for category in post.categories %}
+                <span class="category-badge">{{ category }}</span>
+              {% endfor %}
+            </span>
+          {% endif %}
+        </p>
+        <div class="post-excerpt">
+          {{ post.excerpt }}
+        </div>
+        <p><a href="{{ post.url | relative_url }}" class="read-more">Read more →</a></p>
+      </li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <p>No posts yet. Check back soon!</p>
+{% endif %}
+
+<style>
+.post-list {
+  list-style: none;
+  padding: 0;
+}
+
+.post-item {
+  margin-bottom: 40px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.post-item:last-child {
+  border-bottom: none;
+}
+
+.post-item h2 {
+  margin-bottom: 10px;
+}
+
+.post-item h2 a {
+  color: #333;
+  text-decoration: none;
+}
+
+.post-item h2 a:hover {
+  color: #007bff;
+}
+
+.post-meta {
+  color: #666;
+  font-size: 0.9em;
+  margin-bottom: 15px;
+}
+
+.post-categories {
+  margin-left: 15px;
+}
+
+.category-badge {
+  display: inline-block;
+  background-color: #f0f0f0;
+  padding: 3px 8px;
+  margin: 0 3px;
+  border-radius: 3px;
+  font-size: 0.85em;
+}
+
+.post-excerpt {
+  margin: 15px 0;
+  line-height: 1.6;
+  color: #555;
+}
+
+.read-more {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+</style>
