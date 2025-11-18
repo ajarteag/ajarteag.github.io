@@ -1,6 +1,6 @@
 # Site settings
 title: Alejandro Arteaga
-email: your-email@example.com
+email: alejandro@ajarteag.com
 description: >-
   Personal portfolio showcasing robotics, software engineering, and machine learning projects.
   Passionate about building intelligent systems and innovative solutions.
@@ -9,8 +9,7 @@ url: "https://ajarteag.github.io" # the base hostname & protocol for your site
 
 # Social links
 github_username: ajarteag
-linkedin_username: your-linkedin-username
-twitter_username: your-twitter-username
+linkedin_username: ajarteag
 
 # Build settings
 markdown: kramdown

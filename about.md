@@ -19,20 +19,24 @@ With experience spanning multiple disciplines, I focus on:
 ### Skills
 
 **Programming Languages:**
+
 - Python, C++, Java, JavaScript, and more
 
 **Robotics & Embedded Systems:**
+
 - ROS (Robot Operating System)
 - Embedded systems programming
 - Sensor integration and control systems
 
 **Machine Learning & AI:**
+
 - Deep Learning frameworks (TensorFlow, PyTorch)
 - Computer Vision (OpenCV)
 - Natural Language Processing
 - Data analysis and visualization
 
 **Software Development:**
+
 - Full-stack web development
 - Cloud platforms (AWS, Azure, GCP)
 - DevOps and CI/CD
@@ -47,4 +51,4 @@ I work on both personal and team projects that allow me to explore new technolog
 I'm always interested in connecting with fellow engineers, researchers, and anyone passionate about technology. Feel free to reach out!
 
 - GitHub: [@ajarteag](https://github.com/ajarteag)
-- Email: your-email@example.com
+- Email: <alejandro@ajarteag.com>
