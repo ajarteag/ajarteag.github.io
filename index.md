@@ -18,6 +18,10 @@ title: Home
     <li><strong>Machine Learning:</strong> Developing intelligent algorithms and data-driven applications</li>
   </ul>
 
+  <div class="disclaimer" style="background-color: #fff3cd; border: 1px solid #ffc107; padding: 15px; border-radius: 5px; margin-bottom: 20px;">
+    <strong>⚠️ Disclaimer:</strong> The project information displayed below is completely fabricated by GitHub Copilot and is dummy information for testing website functionality. This serves as a placeholder for real projects to be added in the future.
+  </div>
+
   <h2>Recent Projects</h2>
   {% if site.projects.size > 0 %}
     <div class="project-list">
