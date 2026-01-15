@@ -9,12 +9,12 @@ const Footer = () => {
           <p className="text-gray-400 mb-4 md:mb-0">
             © {new Date().getFullYear()} Matthew Jiang. All rights reserved.
           </p>
-          <a 
-            href="mailto:jiangmy@usc.edu"
+          <a
+            href="mailto:matthewjiang@gatech.edu"
             className="flex items-center gap-2 text-gray-400 hover:text-blue-400 transition-colors"
           >
             <Mail size={20} />
-            jiangmy [at] usc [dot] edu
+            matthewjiang [at] gatech [dot] edu
           </a>
         </div>
       </div>

@@ -1,6 +1,5 @@
 import React from 'react';
-import { Github, Linkedin, FileText, ExternalLink, BotMessageSquare } from 'lucide-react';
-import { Tooltip } from 'flowbite-react';
+import { Github, Linkedin, FileText, ExternalLink } from 'lucide-react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import ScrollIndicator from "../components/ScrollIndicator";
@@ -56,18 +55,6 @@ function Home() {
             </p>
             
             <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 px-4">
-              <Tooltip content="An OpenWebUI powered interface for my locally hosted language models (approved authentication required)." placement="left" style="dark" arrow={false} className="w-64 text-md">
-                <a
-                    href="https://webui.matthewyjiang.com"
-                    className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3 bg-blue-700 rounded-lg hover:bg-blue-600 transition-colors text-base sm:text-sm md:text-base"
-                >
-                    <BotMessageSquare size={20} />AI Chat
-                </a>
-                </Tooltip>
-              <div id="tooltip-default" role="tooltip" className="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700">
-                Tooltip content
-                <div className="tooltip-arrow" data-popper-arrow></div>
-            </div>
               <a
                 href="https://github.com/matthewyjiang"
                 target="_blank"
