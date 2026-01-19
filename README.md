@@ -4,7 +4,7 @@ A modern, responsive portfolio website built with React, TypeScript, and Tailwin
 
 🌐 **Live Site**: [matthewyjiang.github.io](https://matthewyjiang.github.io)
 
-
+[![Deploy static content to Pages](https://github.com/matthewyjiang/matthewyjiang.github.io/actions/workflows/main.yml/badge.svg)](https://github.com/matthewyjiang/matthewyjiang.github.io/actions/workflows/main.yml)
 
 ## Tech Stack
 
