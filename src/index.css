@@ -1,10 +1,104 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Merriweather:wght@400;700;900&family=Space+Grotesk:wght@400;500;700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Example custom styles */
+:root {
+  --ink-100: #f4eee1;
+  --ink-200: #dfd3c0;
+  --ink-300: #c8b99f;
+  --base-900: #111312;
+  --base-800: #1a1d1b;
+  --base-700: #24302d;
+  --mint-400: #66d5b5;
+  --mint-500: #3ac8a0;
+  --sun-400: #f4b15f;
+  --sun-500: #d99344;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-    font-family: "Ubuntu Mono", monospace;
+  margin: 0;
+  font-family: 'Space Grotesk', sans-serif;
+  color: var(--ink-100);
+  background:
+    radial-gradient(circle at 8% 10%, rgba(244, 177, 95, 0.18), transparent 34%),
+    radial-gradient(circle at 88% 18%, rgba(58, 200, 160, 0.18), transparent 36%),
+    linear-gradient(160deg, var(--base-900), var(--base-800) 42%, #121714);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Merriweather', serif;
+  letter-spacing: 0.01em;
+}
+
+code,
+pre,
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.page-noise {
+  position: relative;
+  isolation: isolate;
+}
+
+.page-noise::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.08;
+  z-index: -1;
+  background-image: radial-gradient(#fff 0.5px, transparent 0.5px);
+  background-size: 3px 3px;
+}
+
+.reveal-up {
+  animation: reveal-up 650ms ease both;
+}
+
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 700ms ease, transform 700ms ease;
+  will-change: opacity, transform;
+}
+
+.reveal-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-up,
+  .reveal-on-scroll,
+  .reveal-on-scroll.is-visible {
+    animation: none;
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+@keyframes reveal-up {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

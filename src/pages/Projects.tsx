@@ -1,142 +1,140 @@
-import React from "react";
-import { Github, ExternalLink, Star } from "lucide-react";
-import Navigation from "../components/Navigation";
-import Footer from "../components/Footer";
+import { ArrowUpRight, ExternalLink, Github, Star } from 'lucide-react';
+import Footer from '../components/Footer';
+import Navigation from '../components/Navigation';
+import Reveal from '../components/Reveal';
 
 const projects = [
   {
-    title: "Barracuda AUV",
+    title: 'Barracuda AUV',
     description:
-      "Developing a brand new submarine called the Barracuda. Associated with the USC AUV Design Team, serving as software lead.",
-    image: "/mantaray.jpg",
+      'Developing a brand new submarine called Barracuda with the USC AUV Design Team while leading software architecture and integration.',
+    image: '/mantaray.jpg',
     tags: [
-      "ROS",
-      "Robotics",
-      "AUV",
-      "ROV",
-      "C++",
-      "Python",
-      "Docker",
-      "Kubernetes",
+      'ROS',
+      'Robotics',
+      'AUV',
+      'ROV',
+      'C++',
+      'Python',
+      'Docker',
+      'Kubernetes',
     ],
-    github: "https://github.com/usc-robosub",
+    github: 'https://github.com/usc-robosub',
     featured: true,
     paper: null,
     demo: null,
     stars: 0,
   },
   {
-    title: "USC AUV Website",
+    title: 'USC AUV Website',
     description:
-      "A team website created using Vite + React + TypeScript. Utilized the Google Calendar API to create a functional updating events list.",
-    image: "/auv-website.png",
+      'A team website built with Vite, React, and TypeScript, including Google Calendar API integration for continuously updated events.',
+    image: '/auv-website.png',
     tags: [
-      "Vite",
-      "TypeScript",
-      "Node.js",
-      "React",
-      "HTML",
-      "CSS",
-      "Tailwind",
-      "API",
+      'Vite',
+      'TypeScript',
+      'Node.js',
+      'React',
+      'HTML',
+      'CSS',
+      'Tailwind',
+      'API',
     ],
-    github: "https://github.com/usc-robosub/usc-robosub.github.io",
+    github: 'https://github.com/usc-robosub/usc-robosub.github.io',
     featured: false,
     paper: null,
-    demo: "https://usc-auv.com",
+    demo: 'https://uscfrl.com',
     stars: 0,
   },
   {
-    title: "Project Wumbo",
+    title: 'Project Wumbo',
     description:
-      "Wumbo is a rythmn game that you play with your cardboard guitar and a screen. Won 1st place at the 2024 IEEE IOT Hackathon.",
+      'Wumbo is a rhythm game controlled by a cardboard guitar and display system; it won 1st place at the 2024 IEEE IOT Hackathon.',
     image:
-      "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/842/449/datas/original.jpg",
-    tags: ["ESP32", "IOT", "MIDI", "SDL", "Python", "C", "C++"],
-    github: "https://github.com/matthewyjiang/project-wumbo",
-    featured: false,
-    paper: null,
-    demo: null,
-    stars: 0,
-  },
-  {
-    title: "Verilog CNN",
-    description:
-      "A Convolutional Neural Network Implemented in System Verilog.",
-    image:
-      "https://saturncloud.io/images/blog/a-comprehensive-guide-to-convolutional-neural-networks-the-eli5-way.webp",
-    tags: [
-      "Verilog",
-      "System Verilog",
-      "Modelsim",
-      "Machine Learning",
-      "CNN",
-      "Neural Networks",
-      "HDL",
-    ],
-    github: "https://github.com/matthewyjiang/ee454-final-project",
+      'https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/842/449/datas/original.jpg',
+    tags: ['ESP32', 'IOT', 'MIDI', 'SDL', 'Python', 'C', 'C++'],
+    github: 'https://github.com/matthewyjiang/project-wumbo',
     featured: false,
     paper: null,
     demo: null,
     stars: 0,
   },
   {
-    title: "RAG",
-    description:
-      "Retrieval Augmented Generation, evaluated by Large Langauage Models.",
-    image: "/rag-image.png",
-    tags: [
-      "RAG",
-      "LLM",
-      "Python",
-      "REST API",
-      "Natural Language Processing",
-      "Word Embeddings",
-    ],
-    github: "https://github.com/matthewyjiang/ee454-final-project",
-    featured: false,
-    paper: "/rag-paper.pdf",
-    demo: null,
-    stars: 0,
-  },
-  {
-    title: "Classifying Political Sentiment on Tweet Samples",
-    description:
-      "Developed a neural network model based on Recurrent Neural Networks (RNN) with Long Short-Term Memory (LSTM) units using PyTorch to identify biases in tweet content.",
+    title: 'Verilog CNN',
+    description: 'A convolutional neural network implemented in SystemVerilog for hardware-focused ML experimentation.',
     image:
-      "https://www.mdpi.com/information/information-15-00517/article_deploy/html/images/information-15-00517-g001.png",
+      'https://saturncloud.io/images/blog/a-comprehensive-guide-to-convolutional-neural-networks-the-eli5-way.webp',
     tags: [
-      "RNN",
-      "LSTM",
-      "Machine Learning",
-      "Python",
-      "Natural Language Processing",
-      "Word Embeddings",
+      'Verilog',
+      'SystemVerilog',
+      'Modelsim',
+      'Machine Learning',
+      'CNN',
+      'Neural Networks',
+      'HDL',
     ],
-    github: "https://github.com/matthewyjiang/ee467-final-project",
+    github: 'https://github.com/matthewyjiang/ee454-final-project',
     featured: false,
-    paper: "/classifying_political_sentiment_on_tweet_samples.pdf",
+    paper: null,
     demo: null,
     stars: 0,
   },
   {
-    title: "Security Camera",
-    description:
-      "A home protection system that utilizes the YOLO detection system to determine if a human is in the camera frame.",
-    image: "/ee250-demo.png",
+    title: 'RAG',
+    description: 'Retrieval-augmented generation evaluated with large language models on quality and retrieval relevance.',
+    image: '/rag-image.png',
     tags: [
-      "YOLO",
-      "OpenCV",
-      "Computer Vision",
-      "IOT",
-      "Raspberry Pi",
-      "Python",
-      "MQTT",
-      "REST API",
+      'RAG',
+      'LLM',
+      'Python',
+      'REST API',
+      'Natural Language Processing',
+      'Word Embeddings',
     ],
-    github: "https://github.com/matthewyjiang/ee250-final-project",
+    github: 'https://github.com/matthewyjiang/ee454-final-project',
     featured: false,
-    paper: "/ee250-project-paper.pdf",
+    paper: '/rag-paper.pdf',
+    demo: null,
+    stars: 0,
+  },
+  {
+    title: 'Classifying Political Sentiment on Tweet Samples',
+    description:
+      'Developed an RNN/LSTM-based PyTorch pipeline to identify sentiment and bias patterns in curated tweet datasets.',
+    image:
+      'https://www.mdpi.com/information/information-15-00517/article_deploy/html/images/information-15-00517-g001.png',
+    tags: [
+      'RNN',
+      'LSTM',
+      'Machine Learning',
+      'Python',
+      'Natural Language Processing',
+      'Word Embeddings',
+    ],
+    github: 'https://github.com/matthewyjiang/ee467-final-project',
+    featured: false,
+    paper: '/classifying_political_sentiment_on_tweet_samples.pdf',
+    demo: null,
+    stars: 0,
+  },
+  {
+    title: 'Security Camera',
+    description:
+      'A home protection stack using YOLO-based detection to identify people in frame and trigger downstream automation.',
+    image: '/ee250-demo.png',
+    tags: [
+      'YOLO',
+      'OpenCV',
+      'Computer Vision',
+      'IOT',
+      'Raspberry Pi',
+      'Python',
+      'MQTT',
+      'REST API',
+    ],
+    github: 'https://github.com/matthewyjiang/ee250-final-project',
+    featured: false,
+    paper: '/ee250-project-paper.pdf',
     demo: null,
     stars: 0,
   },
@@ -144,99 +142,94 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 text-white">
+    <div className="page-noise min-h-screen text-[var(--ink-100)]">
       <Navigation />
 
-      <main className="container mx-auto px-4 py-24">
-        <div className="max-w-6xl mx-auto">
-          <header className="text-center mb-16">
-            <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text leading-relaxed">
-              Projects
-            </h1>
-            <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-              A collection.
-            </p>
-          </header>
+      <main className="mx-auto w-full max-w-6xl px-4 pb-16 pt-24 sm:px-6 lg:px-8">
+        <Reveal className="mb-14">
+          <div className="rounded-3xl border border-white/10 bg-[var(--base-700)]/35 p-8 sm:p-10">
+            <h1 className="text-5xl sm:text-6xl">Projects</h1>
+          </div>
+        </Reveal>
 
-          <div className="grid gap-8 md:grid-cols-2">
-            {projects.map((project, index) => (
-              <article
-                key={index}
-                className={`bg-gray-800/50 rounded-xl overflow-hidden backdrop-blur-sm ${
-                  project.featured ? "md:col-span-2" : ""
-                }`}
-              >
+        <div className="grid gap-7 md:grid-cols-2">
+          {projects.map((project, index) => (
+            <Reveal key={project.title} delayMs={index * 80} className={`${project.featured ? 'md:col-span-2' : ''} h-full`}>
+              <article className="group flex h-full flex-col overflow-hidden rounded-3xl border border-white/10 bg-black/20 transition hover:-translate-y-1 hover:border-[var(--mint-500)]/35">
                 <div className="relative h-64 overflow-hidden">
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                    className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40 to-transparent opacity-60" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[var(--base-900)]/85 via-[var(--base-900)]/30 to-transparent" />
+                  {project.featured && (
+                    <span className="absolute left-4 top-4 rounded-full border border-[var(--sun-400)] bg-[var(--base-900)] px-3 py-1 text-xs font-semibold uppercase tracking-wider text-[var(--sun-400)] shadow-lg">
+                      Featured
+                    </span>
+                  )}
                 </div>
 
-                <div className="p-8 flex flex-col">
-                  <div className="flex items-center justify-between mb-4">
-                    <h2 className="text-2xl font-bold">{project.title}</h2>
-                    <div className="flex items-center gap-2 text-gray-400">
-                      <Star
-                        size={16}
-                        className="fill-current text-yellow-400"
-                      />
-                      <span>{project.stars}</span>
-                    </div>
+                <div className="flex flex-1 flex-col p-7">
+                  <div className="mb-4 flex items-center justify-between gap-2">
+                    <h2 className="text-3xl leading-tight">{project.title}</h2>
+                    <span className="inline-flex items-center gap-1 rounded-full border border-white/15 bg-white/5 px-2.5 py-1 text-xs text-[var(--ink-300)]">
+                      <Star size={12} className="text-[var(--sun-400)]" />
+                      {project.stars}
+                    </span>
                   </div>
 
-                  <p className="text-gray-300 mb-6">{project.description}</p>
+                  <p className="text-[var(--ink-200)]">{project.description}</p>
 
-                  <div className="flex flex-wrap gap-2 mb-6">
-                    {project.tags.map((tag, tagIndex) => (
+                  <div className="mt-5 flex flex-wrap gap-2">
+                    {project.tags.map((tag) => (
                       <span
-                        key={tagIndex}
-                        className="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-sm"
+                        key={`${project.title}-${tag}`}
+                        className="rounded-full border border-[#66d5b580] bg-[#66d5b54d] px-3 py-1 text-xs font-semibold uppercase tracking-wide text-[#d9fff4]"
                       >
                         {tag}
                       </span>
                     ))}
                   </div>
 
-                  <div className="flex gap-4">
+                  <div className="mt-8 flex flex-wrap gap-3 md:mt-auto md:pt-8">
                     <a
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 px-4 py-2 bg-gray-700 rounded-lg hover:bg-gray-600 transition-colors"
+                      className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-2 text-sm text-[var(--ink-100)] transition hover:border-[var(--mint-500)]/40 hover:text-[var(--mint-400)]"
                     >
-                      <Github size={20} />
-                      <span>Github</span>
+                      <Github size={16} />
+                      GitHub
+                      <ArrowUpRight size={14} />
                     </a>
-                    {project.paper != null && (
+                    {project.paper && (
                       <a
                         href={project.paper}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-2 px-4 py-2 bg-blue-700 rounded-lg hover:bg-blue-600 transition-colors"
+                        className="inline-flex items-center gap-2 rounded-full border border-[var(--sun-500)]/40 bg-[var(--sun-500)]/15 px-4 py-2 text-sm text-[var(--ink-100)] transition hover:bg-[var(--sun-500)]/25"
                       >
-                        <ExternalLink size={20} />
-                        <span>Read Paper</span>
+                        <ExternalLink size={16} />
+                        Read Paper
                       </a>
                     )}
-                    {project.demo != null && (
+                    {project.demo && (
                       <a
                         href={project.demo}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-2 px-4 py-2 bg-emerald-600 rounded-lg hover:bg-emerald-500 transition-colors"
+                        className="inline-flex items-center gap-2 rounded-full border border-[var(--mint-500)]/40 bg-[var(--mint-500)]/15 px-4 py-2 text-sm text-[var(--ink-100)] transition hover:bg-[var(--mint-500)]/25"
                       >
-                        <ExternalLink size={20} />
-                        <span>Live Demo</span>
+                        <ExternalLink size={16} />
+                        Live Demo
                       </a>
                     )}
                   </div>
                 </div>
               </article>
-            ))}
-          </div>
+            </Reveal>
+          ))}
         </div>
       </main>
 
