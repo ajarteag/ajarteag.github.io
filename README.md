@@ -1,8 +1,8 @@
-# Matthew Jiang - Personal Portfolio Website
+# Alejandro Arteaga - Personal Portfolio Website
 
 A modern, responsive portfolio website built with React, TypeScript, and Tailwind CSS. This site showcases my experience in robotics, computer engineering, and software development.
 
-🌐 **Live Site**: [matthewyjiang.github.io](https://matthewyjiang.github.io)
+🌐 **Live Site**: [ajarteag.github.io](https://ajarteag.github.io)
 
 [![Deploy static content to Pages](https://github.com/matthewyjiang/matthewyjiang.github.io/actions/workflows/main.yml/badge.svg)](https://github.com/matthewyjiang/matthewyjiang.github.io/actions/workflows/main.yml)
 
@@ -19,34 +19,42 @@ A modern, responsive portfolio website built with React, TypeScript, and Tailwin
 ## Development
 
 ### Prerequisites
+
 - Node.js (v18 or higher)
 - npm or yarn
 
 ### Installation
+
 ```bash
-git clone https://github.com/matthewyjiang/matthewyjiang.github.io.git
-cd matthewyjiang.github.io
+git clone https://github.com/ajarteag/ajarteag.github.io.git
+cd ajarteag.github.io
 npm install
 ```
 
 ### Development Server
+
 ```bash
 npm run dev
 ```
+
 Opens development server at `http://localhost:5173`
 
 ### Build for Production
+
 ```bash
 npm run build
 ```
+
 Generates optimized build in `/dist` directory
 
 ### Preview Production Build
+
 ```bash
 npm run preview
 ```
 
 ### Linting
+
 ```bash
 npm run lint
 ```
@@ -58,7 +66,8 @@ The site is automatically deployed to GitHub Pages using GitHub Actions:
 - **Trigger**: Push to `main` branch
 - **Build**: Node.js 20 with npm caching
 - **Deploy**: Static files served from `/dist` directory
-- **URL**: [matthewyjiang.github.io](https://matthewyjiang.github.io)
+- **URL**: [ajarteag.github.io](https://ajarteag.github.io)
 
+## Citation
 
-
+This site is based off of [Matthew Jiang](https://matthewyjiang.com/)'s [Personal Portfolio Website](https://github.com/matthewyjiang/matthewyjiang.github.io).
