@@ -7,11 +7,19 @@
 ## Personal Context (Portfolio Content)
 When writing copy, generating sections, or filling in project details, use the following biographical data:
 * **Name:** Alejandro Arteaga
-* **Current Status:** MS in Computer Science (Artificial Intelligence and Robotics) at the University of Southern California (USC).
-* **Undergraduate:** BS in Astrophysics from Carnegie Mellon University.
-* **Experience:** Software Engineer Intern at Qualcomm (Modem Software, Summer 2024).
-* **Key Projects:** Software Lead for USC Autonomous Underwater Vehicle Design Team (Robosub SC) preparing for the 2026 competition. 
-* **Technical Stack Focus:** C++, Python, ROS 2 (Humble), CUDA/Triton, Linux (Arch/Ubuntu), and Neovim workflows.
+* **Current Status:** Pursuing a Master of Science in Computer Science, Intelligent Robotics at the University of Southern California (USC), Viterbi School of Engineering (Expected Dec 2026).
+* **Undergraduate Degree:** Bachelor of Science in Physics/Astrophysics with a Minor in Computer Science from Carnegie Mellon University (May 2024).
+* **Experience:**
+  * Software Infrastructure Intern at NVIDIA Corporation for the Autonomous Vehicles (AV), Verification & Validation (V&V) Team (May 2026 - Present).
+  * Software Engineer Intern at Qualcomm Technologies Inc for the Modem Software, 5G Access Stratum Automation Integration & Test team (May 2025 - Aug 2025).
+  * Robotics Software Engineer for the CMU Autonomous Underwater Vehicle Design Team, TartanAUV (Sep 2023 - Aug 2024).
+  * Software Engineer Intern at National Instruments on the Telemetry Squad (May 2023 - Aug 2023).
+  * Scientific Computing Research Assistant for the Mellon College of Science, Department of Physics, Neutrino Physics Group (May 2021 - May 2022).
+* **Key Projects:**
+  * Performance Analysis and Optimization of Direct Lidar-Inertial Odometry (DLIO) for Edge Computing, benchmarking real-time performance on an NVIDIA Jetson AGX Orin.
+  * Multimodal GenAI Personal Nutrition Assistant developed during the Qualcomm Edge AI Developer Hackathon, leveraging on-device inference and RAG.
+* **Technical Stack Focus:** Python, C/C++, Linux, ROS, NVIDIA JetPack, Foxglove, Arduino, Raspberry Pi, OpenCV, PyTorch, UV, Docker, K3s Kubernetes, Jenkins, MongoDB, MySQL, PostgreSQL, SQLite, Apache Spark, OpenMPI, OpenMP, and OpenACC.
+* **Resume File Location:** A downloadable PDF of my resume is stored at `public/Resume_AlejandroArteaga.pdf`. When creating download buttons, embedded viewers, or links to the resume, always use the `href` path `/Resume_AlejandroArteaga.pdf`.
 
 ## Workflow & Coding Standards
 * Write clean, semantic, and accessible code.
