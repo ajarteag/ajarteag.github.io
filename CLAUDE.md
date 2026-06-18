@@ -6,29 +6,24 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 This repo is **Alejandro Arteaga's personal portfolio website**, a static site deployed to GitHub Pages at the user/organization page `ajarteag.github.io` (served from the repo root domain, not a subpath).
 
-**Current state: early scaffold.** The intended stack is described below, but the actual application has not been built yet. As of now the repo contains only:
-- `public/Resume_AlejandroArteaga.pdf` — downloadable resume (see Resume path note below)
-- `.github/workflows/` — two GitHub Pages deploy workflows
-- `README.md` — phase-based roadmap for the build-out
-- Leftover Next.js config (`.eslintrc.json`, `.gitignore`) from the previous site that was nuked (commit `027f531`)
+**Current state: Phase 1 complete — Astro scaffolded.** The site is a minimal Astro + strict-TypeScript project that builds to static `dist/`. Key files:
+- `package.json` / `package-lock.json` — Astro `^6.4.7`, scripts `dev`/`build`/`preview`; requires Node `>=22.12.0`.
+- `astro.config.mjs` — sets `site: 'https://ajarteag.github.io'` (default static output).
+- `tsconfig.json` — extends `astro/tsconfigs/strict`.
+- `src/pages/index.astro` — minimal branded placeholder ("Portfolio coming soon"); **Phase 2 builds out the real content here.**
+- `public/` — `Resume_AlejandroArteaga.pdf` plus `favicon.svg`/`favicon.ico`.
+- `.github/workflows/deploy.yml` — single GitHub Pages workflow: `npm ci && npm run build` → publishes `./dist` on push to `main`.
 
-There is **no `package.json`, `astro.config.*`, or `src/` yet** — these must be created when scaffolding the Astro project. The `README.md` roadmap (scaffold → About/Education → Projects grid → styling/terminal aesthetic → Pages deploy) is the source of truth for what to build next; the user wants to flesh these phases out collaboratively.
+**Stack:** Astro (static site generator), MDX planned but not yet added. There is no test setup or linter configured yet (the old Next.js `.eslintrc.json` was removed).
 
-**Intended stack:** Astro (static site generator) with MDX. Build output goes to `./dist`, which both deploy workflows publish.
-
-**Gotchas when scaffolding:**
-- `.eslintrc.json` extends `next/core-web-vitals` and `.gitignore` targets `.next/`/`out/` — these are Next.js leftovers. Update them to match Astro (output `dist/`, `node_modules/`) when setting up the project.
-- There are **two redundant Pages workflows** that both trigger on push to `main` and both publish `./dist`: `.github/workflows/deploy.yml` and `.github/workflows/main.yml`. They will race under the shared `concurrency: pages` group. Consolidate to one before relying on deploys.
-- `deploy.yml` has a bug in the Node setup step: `node-size: 20` should be `node-version: 20`.
+**Next: Phase 2 — content & layout.** Per the `README.md` roadmap: single-page scroll, terminal/minimal aesthetic, sections **About** (hero intro merged in: name, tagline, GitHub + LinkedIn links, resume download) → **Education** → **Experience** → **Projects**. Pull section copy from the Personal Context below. The user wants to build the phases out collaboratively — confirm direction before large additions.
 
 ## Common Commands
 
-These assume the Astro project has been scaffolded with the scripts below in `package.json`:
-- Install dependencies: `npm install`
+- Install dependencies: `npm install` (CI uses `npm ci`)
 - Start dev server: `npm run dev -- --host 0.0.0.0` (port 4321)
 - Build site: `npm run build` (outputs to `./dist`)
 - Preview production build: `npm run preview -- --host 0.0.0.0`
-- Run Playwright tests/inspections: `npx playwright test`
 
 ## Critical: Dev Server Binding
 
