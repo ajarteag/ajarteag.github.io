@@ -38,3 +38,10 @@ When writing copy, generating sections, or filling in project details, use the f
 * Build Site: `npm run build`
 * Preview Production Build: `npm run preview -- --host 0.0.0.0`
 * Run Playwright Tests/Inspections: `npx playwright test`
+
+## Git & Version Control Workflow
+* **Branching Strategy:** You are strictly prohibited from committing or pushing directly to the `main` branch. 
+* **Branch Naming:** Before making any code changes, you must create and checkout a new branch using the format `feature/cc/[concise-feature-name]` (e.g., `feature/cc/3d-canvas-setup` or `feature/cc/navbar-styling`).
+* **Commits:** Make atomic commits with clear, descriptive messages explaining the changes.
+* **Pull Requests:** Once your feature is complete and locally tested, push your branch to the remote repository (`git push -u origin <branch-name>`).
+* **Handoff:** After pushing, use the GitHub CLI to create a pull request into `main` (`gh pr create --title "..." --body "..."`). Once the PR is created, stop and provide me with the link so I can visually review the code and manually merge it on GitHub.
