@@ -1,0 +1,90 @@
+---
+const projects = [
+	{
+		name: 'DLIO Edge-Computing Optimization',
+		summary:
+			'Performance analysis and optimization of Direct Lidar-Inertial Odometry (DLIO) for edge computing, benchmarked on the NVIDIA Jetson AGX Orin.',
+		tags: ['ROS', 'C++', 'NVIDIA Jetson', 'Profiling'],
+	},
+	{
+		name: 'Multimodal GenAI Nutrition Assistant',
+		summary:
+			'A personal nutrition assistant built for the Qualcomm Edge AI Hackathon using on-device inference and retrieval-augmented generation (RAG).',
+		tags: ['On-device AI', 'RAG', 'PyTorch', 'Multimodal'],
+	},
+];
+---
+
+<section id="projects" aria-labelledby="projects-title">
+	<h2 id="projects-title" class="section-title">
+		<span class="prompt">~/</span>projects
+	</h2>
+	<ul class="project-grid">
+		{
+			projects.map((project) => (
+				<li class="project">
+					<h3 class="project-name">{project.name}</h3>
+					<p class="project-summary">{project.summary}</p>
+					<ul class="tags" aria-label="Technologies">
+						{project.tags.map((tag) => (
+							<li class="tag">{tag}</li>
+						))}
+					</ul>
+				</li>
+			))
+		}
+	</ul>
+</section>
+
+<style>
+	.project-grid {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: grid;
+		gap: 1.25rem;
+		grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+	}
+
+	.project {
+		border: 1px solid var(--border);
+		border-radius: 8px;
+		background: var(--bg-elev);
+		padding: 1.25rem 1.35rem;
+		transition: border-color 0.15s ease;
+	}
+
+	.project:hover {
+		border-color: var(--accent-dim);
+	}
+
+	.project-name {
+		margin: 0 0 0.5rem;
+		font-size: 1.05rem;
+		color: var(--accent);
+	}
+
+	.project-summary {
+		margin: 0 0 1rem;
+		color: var(--fg-muted);
+		font-size: 0.95rem;
+	}
+
+	.tags {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.4rem;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.tag {
+		font-size: 0.75rem;
+		color: var(--fg-muted);
+		border: 1px solid var(--border);
+		border-radius: 4px;
+		padding: 0.15rem 0.5rem;
+		background: var(--bg);
+	}
+</style>

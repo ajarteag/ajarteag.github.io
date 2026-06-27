@@ -1,0 +1,111 @@
+---
+const links = [
+	{ label: 'GitHub', href: 'https://github.com/ajarteag', external: true },
+	{ label: 'LinkedIn', href: 'https://www.linkedin.com/in/ajarteag', external: true },
+	{ label: 'Resume', href: '/Resume_AlejandroArteaga.pdf', external: false },
+];
+---
+
+<section id="about" aria-labelledby="about-title">
+	<header class="hero">
+		<p class="hero-prompt"><span class="prompt">$</span> whoami</p>
+		<h1 id="about-title" class="hero-name">Alejandro Arteaga</h1>
+		<p class="hero-tagline">
+			Robotics &amp; edge-AI software engineer — building and validating systems
+			that run at the edge.
+		</p>
+	</header>
+
+	<p class="bio">
+		MS in Computer Science (Intelligent Robotics) at USC Viterbi, with a BS in
+		Physics/Astrophysics from Carnegie Mellon. I work across the stack — from
+		autonomous-vehicle verification and 5G modem automation to underwater
+		robotics and on-device GenAI — with a focus on performance, reliability, and
+		edge computing.
+	</p>
+
+	<ul class="links" aria-label="Profile links">
+		{
+			links.map((link) => (
+				<li>
+					<a
+						href={link.href}
+						{...link.external
+							? { target: '_blank', rel: 'noopener noreferrer' }
+							: {}}
+					>
+						{link.label}
+						{link.external ? <span aria-hidden="true"> ↗</span> : null}
+					</a>
+				</li>
+			))
+		}
+	</ul>
+
+	<p class="stack">
+		<span class="prompt">~</span> Python · C/C++ · Linux · ROS · Docker · K3s · PyTorch
+		· OpenCV · NVIDIA JetPack
+	</p>
+</section>
+
+<style>
+	.hero {
+		margin-bottom: 1.5rem;
+	}
+
+	.hero-prompt {
+		color: var(--fg-muted);
+		margin: 0 0 0.5rem;
+		font-size: 0.95rem;
+	}
+
+	.hero-name {
+		font-size: clamp(2rem, 1.4rem + 3vw, 3.25rem);
+		line-height: 1.1;
+		margin: 0;
+		color: var(--fg);
+	}
+
+	.hero-tagline {
+		color: var(--accent);
+		margin: 0.75rem 0 0;
+		font-size: clamp(1rem, 0.95rem + 0.4vw, 1.2rem);
+	}
+
+	.bio {
+		color: var(--fg-muted);
+		max-width: 46rem;
+	}
+
+	.links {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.75rem;
+		list-style: none;
+		margin: 1.5rem 0;
+		padding: 0;
+	}
+
+	.links a {
+		display: inline-block;
+		padding: 0.5rem 1rem;
+		border: 1px solid var(--border);
+		border-radius: 6px;
+		background: var(--bg-elev);
+		color: var(--fg);
+		transition: border-color 0.15s ease, color 0.15s ease;
+	}
+
+	.links a:hover,
+	.links a:focus-visible {
+		border-color: var(--accent);
+		color: var(--accent);
+		text-decoration: none;
+	}
+
+	.stack {
+		color: var(--fg-muted);
+		font-size: 0.9rem;
+		margin: 1.5rem 0 0;
+	}
+</style>

@@ -1,0 +1,213 @@
+---
+interface Props {
+	title: string;
+	description: string;
+}
+
+const { title, description } = Astro.props;
+
+const navItems = [
+	{ id: 'about', label: 'about' },
+	{ id: 'education', label: 'education' },
+	{ id: 'experience', label: 'experience' },
+	{ id: 'projects', label: 'projects' },
+];
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="generator" content={Astro.generator} />
+		<meta name="description" content={description} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<a class="skip-link" href="#about">Skip to content</a>
+		<header class="site-header">
+			<nav class="nav" aria-label="Primary">
+				<a class="brand" href="#about"><span class="prompt">~</span>aja</a>
+				<ul class="nav-list">
+					{
+						navItems.map((item) => (
+							<li>
+								<a href={`#${item.id}`}>{item.label}</a>
+							</li>
+						))
+					}
+				</ul>
+			</nav>
+		</header>
+		<main id="main">
+			<slot />
+		</main>
+		<footer class="site-footer">
+			<p>
+				<span class="prompt">$</span> built with
+				<a href="https://astro.build">Astro</a> · hosted on GitHub Pages
+			</p>
+		</footer>
+
+		<style is:global>
+			:root {
+				--bg: #0d1117;
+				--bg-elev: #161b22;
+				--fg: #c9d1d9;
+				--fg-muted: #8b949e;
+				--accent: #4ade80;
+				--accent-dim: #2ea043;
+				--border: #21262d;
+				--mono: ui-monospace, 'SF Mono', 'SFMono-Regular', 'Cascadia Code',
+					Menlo, Monaco, Consolas, 'Liberation Mono', monospace;
+				--maxw: 56rem;
+			}
+
+			*,
+			*::before,
+			*::after {
+				box-sizing: border-box;
+			}
+
+			html {
+				scroll-behavior: smooth;
+				scroll-padding-top: 4.5rem;
+			}
+
+			body {
+				margin: 0;
+				background: var(--bg);
+				color: var(--fg);
+				font-family: var(--mono);
+				font-size: clamp(0.95rem, 0.9rem + 0.3vw, 1.05rem);
+				line-height: 1.65;
+				-webkit-font-smoothing: antialiased;
+			}
+
+			a {
+				color: var(--accent);
+				text-decoration: none;
+			}
+
+			a:hover,
+			a:focus-visible {
+				text-decoration: underline;
+				text-underline-offset: 3px;
+			}
+
+			:focus-visible {
+				outline: 2px solid var(--accent);
+				outline-offset: 2px;
+				border-radius: 2px;
+			}
+
+			.skip-link {
+				position: absolute;
+				left: -9999px;
+				top: 0;
+				padding: 0.5rem 1rem;
+				background: var(--accent);
+				color: var(--bg);
+				z-index: 100;
+			}
+
+			.skip-link:focus {
+				left: 0;
+			}
+
+			.prompt {
+				color: var(--accent);
+			}
+
+			.site-header {
+				position: sticky;
+				top: 0;
+				z-index: 50;
+				background: color-mix(in srgb, var(--bg) 85%, transparent);
+				backdrop-filter: blur(8px);
+				border-bottom: 1px solid var(--border);
+			}
+
+			.nav {
+				max-width: var(--maxw);
+				margin: 0 auto;
+				padding: 0.85rem 1.25rem;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				gap: 1rem;
+			}
+
+			.brand {
+				color: var(--fg);
+				font-weight: 700;
+				letter-spacing: 0.02em;
+			}
+
+			.nav-list {
+				display: flex;
+				gap: 1.1rem;
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				flex-wrap: wrap;
+			}
+
+			.nav-list a {
+				color: var(--fg-muted);
+			}
+
+			.nav-list a:hover,
+			.nav-list a:focus-visible {
+				color: var(--accent);
+			}
+
+			main {
+				max-width: var(--maxw);
+				margin: 0 auto;
+				padding: 0 1.25rem;
+			}
+
+			section {
+				padding: 4rem 0 3rem;
+				border-bottom: 1px solid var(--border);
+			}
+
+			section:last-of-type {
+				border-bottom: none;
+			}
+
+			.section-title {
+				font-size: 1.35rem;
+				margin: 0 0 1.75rem;
+				color: var(--fg);
+				font-weight: 700;
+			}
+
+			.section-title .prompt {
+				color: var(--fg-muted);
+				margin-right: 0.5rem;
+			}
+
+			.site-footer {
+				max-width: var(--maxw);
+				margin: 0 auto;
+				padding: 2rem 1.25rem 3rem;
+				color: var(--fg-muted);
+				font-size: 0.85rem;
+			}
+
+			.site-footer a {
+				color: var(--fg-muted);
+			}
+
+			@media (prefers-reduced-motion: reduce) {
+				html {
+					scroll-behavior: auto;
+				}
+			}
+		</style>
+	</body>
+</html>

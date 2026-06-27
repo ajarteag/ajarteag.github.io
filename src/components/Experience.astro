@@ -1,0 +1,106 @@
+---
+const experience = [
+	{
+		company: 'NVIDIA',
+		role: 'Software Infrastructure Intern — Autonomous Vehicles V&V',
+		period: 'May 2026 – Present',
+		summary:
+			'Verification & Validation tooling and infrastructure for the autonomous-vehicle platform.',
+	},
+	{
+		company: 'Qualcomm',
+		role: 'Software Engineer Intern — Modem Software',
+		period: 'May 2025 – Aug 2025',
+		summary:
+			'5G Access Stratum automation, integration, and test for the modem software stack.',
+	},
+	{
+		company: 'CMU TartanAUV',
+		role: 'Robotics Software Engineer',
+		period: 'Sep 2023 – Aug 2024',
+		summary:
+			'Autonomous underwater vehicle software — perception, controls, and on-board systems.',
+	},
+	{
+		company: 'National Instruments',
+		role: 'Software Engineer Intern — Telemetry Squad',
+		period: 'May 2023 – Aug 2023',
+		summary: 'Telemetry tooling and data pipelines.',
+	},
+	{
+		company: 'CMU Physics — Neutrino Group',
+		role: 'Scientific Computing Research Assistant',
+		period: 'May 2021 – May 2022',
+		summary:
+			'High-performance scientific computing for neutrino physics research.',
+	},
+];
+---
+
+<section id="experience" aria-labelledby="experience-title">
+	<h2 id="experience-title" class="section-title">
+		<span class="prompt">~/</span>experience
+	</h2>
+	<ol class="entry-list">
+		{
+			experience.map((item) => (
+				<li class="entry">
+					<div class="entry-head">
+						<h3 class="entry-title">
+							{item.role} <span class="at">@ {item.company}</span>
+						</h3>
+						<span class="entry-period">{item.period}</span>
+					</div>
+					<p class="entry-sub">{item.summary}</p>
+				</li>
+			))
+		}
+	</ol>
+</section>
+
+<style>
+	.entry-list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: grid;
+		gap: 1.75rem;
+	}
+
+	.entry {
+		border-left: 2px solid var(--border);
+		padding-left: 1.25rem;
+	}
+
+	.entry-head {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: baseline;
+		gap: 0.25rem 1rem;
+	}
+
+	.entry-title {
+		font-size: 1.02rem;
+		margin: 0;
+		color: var(--fg);
+		font-weight: 600;
+	}
+
+	.at {
+		color: var(--accent);
+		font-weight: 700;
+	}
+
+	.entry-period {
+		color: var(--fg-muted);
+		font-size: 0.85rem;
+		white-space: nowrap;
+	}
+
+	.entry-sub {
+		margin: 0.4rem 0 0;
+		color: var(--fg-muted);
+		font-size: 0.95rem;
+	}
+</style>
